@@ -1,0 +1,31 @@
+<div class="page-banner-contacts" [ngStyle]="{'background-image': 'url(' + pageContent.imagePath + ')'}"></div>
+<div class="row mt-5 no-gutters px-xs-1">
+        <div class="col-2 hide-xs">
+            <img class="" [src]="pageContent.innerImagePath" alt="">
+        </div>
+        <div class="col-12 col-md-10 mt-5">
+            <div class="row no-gutters">
+                <div class="col-12 col-md-5">
+                    <div class="page-title2 mt-5">{{pageContent.leftSide.title2}}</div>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-12 col-md-5">
+                    <div class="page-content1">{{pageContent.leftSide.content1}}</div>
+                    <div class="page-qouteText"> <q> {{pageContent.leftSide.qouteText}} </q> </div>
+                </div>
+                <div class="col-12 col-md-5">
+                    <div class="pl-md-5">
+                        <div class="addr1">{{pageContent.rightSide.addr1}}</div>
+                        <div class="addr2">{{pageContent.rightSide.addr2}}</div>
+                        <div class="addr3">{{pageContent.rightSide.addr3}}</div>
+                        <div class="addr4">{{pageContent.rightSide.addr4}}</div>
+                        <div class="phone mt-3">{{pageContent.rightSide.phone}}</div>
+                        <div class="email">{{pageContent.rightSide.email}}</div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+</div>
+
