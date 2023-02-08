@@ -1,0 +1,90 @@
+{
+    "carouselList": [
+        {
+            "id": "1",
+            "title": "ICONIC INVESTMENT",
+            "hyperLinkText": "Contact",
+            "hyperLink": "contacts",
+            "imagePath": "assets/elements/pictures/About_us/Carousel/first_picture.jpg",
+            "dateFrom ": "",
+            "dateTo": "",
+            "order": 1,
+            "isInCarousel": true
+        },
+        {
+            "id": "2",
+            "title": "ICONIC INVESTMENT",
+            "hyperLinkText": "",
+            "hyperLink": "",
+            "imagePath": "assets/elements/pictures/About_us/Carousel/new_york.jpg",
+            "dateFrom ": "",
+            "dateTo": "",
+            "order": 2,
+            "isInCarousel": true
+        },
+        {
+            "id": "3",
+            "title": "ICONIC INVESTMENT",
+            "hyperLinkText": "",
+            "hyperLink": "",
+            "imagePath": "assets/elements/pictures/About_us/Carousel/london.jpg",
+            "dateFrom ": "",
+            "dateTo": "",
+            "order": 3,
+            "isInCarousel": true
+        },
+        {
+            "id": "4",
+            "title": "ICONIC INVESTMENT",
+            "hyperLinkText": "",
+            "hyperLink": "",
+            "imagePath": "assets/elements/pictures/About_us/Carousel/milan.jpg",
+            "dateFrom ": "",
+            "dateTo": "",
+            "order": 4,
+            "isInCarousel": true
+        }
+    ],
+    "pageContents": {
+        "titleImagePath": "assets/elements/triangle@2x.png",
+        "title": "Our Method",
+        "subTitle": "The boutique  for top real estate",
+        "qouteText": "Lorem ipsum dolor sit amet, consectetur",
+        "topText": [
+            {
+                "title": "The boutique for top-end real estate",
+                "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, ",
+                "linkText": "learn more about our method",
+                "linkUrl": ""
+            },
+            {
+                "title": "Prestigious world-class properties",
+                "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, distinctio. Amet aliquam ullam animi culpa adipisci,  delectus nisi.",
+                "linkText": "browse through our-porfolio",
+                "linkUrl": ""
+            }
+        ],
+        "bottomText": [
+            {
+                "title": "The sublime ownership",
+                "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, distinctio. Amet aliquam ullam animi culpa adipisci,  delectus nisi.",
+                "linkText": "contact us to start your journey",
+                "linkUrl": ""
+            },
+            {
+                "title": "Secure and rewarding opportunities",
+                "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, distinctio. Amet aliquam ullam animi culpa adipisci,  delectus nisi.",
+                "linkText": "meet our team and get started",
+                "linkUrl": ""
+            }
+        ]
+    },
+    "banner" : {
+        "bannerImagePath": "assets/elements/pictures/About_us/Banner_Single/1.jpg",
+        "bannerTitle": "Discover Bespoke Real State",
+        "bannerSubTitle": "The boutique  for top real estate",
+        "bannerBtnText" : "CONTACT US TODAY",
+        "bannerBtnUrl" : ""
+    }
+
+}

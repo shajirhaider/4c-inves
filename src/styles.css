@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css');
+
 html,
 body {
   height: 100%;
@@ -1064,12 +1066,13 @@ body {
 .page-banner-contacts {
   /* max-width: 100%;
     max-height: 100%; */
-  height: 400px;
+  height: 430px;
   /* background-image:;     */
-  background-position: center;
+  /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
   background-repeat: no-repeat, repeat;
+  /* background: #FFF; */
 }
 
 .mt-3 {
@@ -1080,39 +1083,43 @@ body {
   margin-top: 3rem;
 }
 
-.title-image{
+.title-image {
   height: 100px;
   width: 100px;
 }
 
-.visibility-none{
+.visibility-none {
   visibility: hidden;
 }
-.border-left{
-  border-left: 5px solid #000;
+
+.border-left {
+  border-left: 5px solid #585555;
 }
-.border-box{
-  border: 5px solid #000;
+
+.border-box {
+  border: 5px solid #585555;
   border-right: none;
   border-left: none;
 }
 
-.border-black{
-  border-bottom: 3px solid #000;
+.border-black {
+  border-bottom: 3px solid #585555;
 }
-.ser-text{
+
+.ser-text {
   font-size: 26pt;
   font-weight: bold;
   color: #F5A800;
   padding: 15px;
 }
-.page-title{
+
+.page-title {
   font-size: 50pt;
   font-weight: bold;
   color: #000;
 }
 
-.page-subtitle{
+.page-subtitle {
   font-size: 16pt;
   color: #000;
 }
@@ -1126,6 +1133,7 @@ body {
 .page-content1 {
   font-size: 16pt;
   color: #000;
+  margin-top: 10px;
 }
 
 .page-qouteText {
@@ -1170,7 +1178,8 @@ q::after {
 .text-md-center {
   text-align: center !important;
 }
-.pad-tl-border{
+
+.pad-tl-border {
   padding-top: 20px;
   padding-left: 20px;
   padding-bottom: 50px;
@@ -1212,7 +1221,7 @@ q::after {
 
 }
 
-.upright-text{
+.upright-text {
   position: relative;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -1220,4 +1229,182 @@ q::after {
   -webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
   top: 50%;
+}
+
+
+/* Feel free to change duration  */
+.animated {
+  -webkit-animation-duration: 1000 ms;
+  animation-duration: 1000 ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* .owl-animated-out - only for current item */
+/* This is very important class. Use z-index if you want move Out item above In item */
+.owl-animated-out {
+  z-index: 1;
+}
+
+/* .owl-animated-in - only for upcoming item
+/* This is very important class. Use z-index if you want move In item above Out item */
+.owl-animated-in {
+  z-index: 0;
+}
+
+/* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.carosulImg {
+  height: 600px !important;
+  min-width: 100%;
+}
+
+.carosul-title {
+  font-size: 80pt;
+  font-weight: bold;
+  color: #FFF;
+  position: absolute !important;
+  top: 260px !important;
+  margin: 0 auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  left: 0 !important;
+  right: 0 !important;
+  text-align: center !important;
+
+}
+
+
+.carosul-btn {
+  font-size: 16pt;
+  font-weight: bold;
+  color: #FFF;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background: #000;
+  position: absolute;
+  top: 480px;
+  cursor: pointer;
+  right: 30px;
+  border: #000;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background: white !important;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #000 !important;
+}
+
+.owl-theme .owl-dots {
+  position: absolute !important;
+  top: 560px !important;
+  margin: 0 auto !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  left: 0 !important;
+  right: 0 !important;
+  text-align: center !important;
+}
+
+.pad2x{
+  padding-right: 30px;
+}
+
+@media (max-width: 768px) {
+  .carosul-title {
+    font-size: 40pt;
+  }
+  .pad2x{
+    padding-right: 0px;
+  }
+}
+
+.about-link{
+  font-size: 16px;
+  color: #8b8b8b;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.banner-title{
+  font-size: 50pt;
+  font-weight: bold;
+}
+
+.banner-subtitle{
+  font-size: 26pt;
+}
+
+.btn-yellow{
+  background: #F5A800;
+  color: #000;
+  font-size: 26pt;
+  font-weight: bold;
+  padding: 20px;
+  border: #F5A800;
+  cursor: pointer;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.btn-yellow:hover {
+  background: #d6960c radial-gradient(circle, transparent 1%, #d6960c 1%) center/15000%;
+}
+.btn-yellow:active {
+  background-color: #ebad28;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+
+.banner-btn{
+  position: absolute;
+  top: 50%;
+}
+
+@media (max-width: 768px) {
+  .btn-yellow{
+    font-size: 13pt;
+  }
+  .page-banner-contacts {
+    background-position: center;
+  }
+  .banner-btn{
+    width: 100%;
+    top: 86% !important;
+  }
+
+  .banner-title{
+    font-size: 22pt;
+  }
+  
+  .banner-subtitle{
+    font-size: 18pt;
+  }
+ 
 }

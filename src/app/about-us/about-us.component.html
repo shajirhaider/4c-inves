@@ -1,1 +1,59 @@
-<p>about-us works!</p>
+
+<owl-carousel-o [options]="customOptions">
+    <ng-container *ngFor="let slide of carouselList">
+        <ng-template class="slide" carouselSlide [id]="slide.id">
+            <img class="carosulImg" [src]="slide.imagePath" [alt]="slide.hyperLinkText" [title]="slide.hyperLinkText" />
+            <div class="carosul-title">{{slide.title}}</div>
+            <button *ngIf="slide.hyperLinkText" class="carosul-btn" [owlRouterLink]="slide.hyperLink">{{slide.hyperLinkText}}</button>
+        </ng-template>
+    </ng-container>
+</owl-carousel-o>
+
+<div class="row mt-5 no-gutters px-xs-1">
+    <div class="col-2 col-md-1"><img class="title-image" [src]="pageContent.titleImagePath"></div>
+    <div class="col-10 col-md-7">
+        <div class="page-title">{{pageContent.title}}</div>
+        <div class="page-subtitle">{{pageContent.subTitle}}</div>
+    </div>
+    <div class="col-12 col-md-8 border-black mt-3"></div>
+</div>
+
+<div class="row mt-5 no-gutters px-xs-1">
+    <div class="col-12 col-md-6 mt-5"  *ngFor="let pg of pageContent.topText">
+        <div class="pad2x">           
+            <div class="page-title2">{{pg.title}}</div>
+            <div class="page-content1">{{pg.content}}</div>
+            <div class="about-link mt-3">
+                <a>{{pg.linkText}}</a>
+            </div>
+        </div>
+    </div>
+    <div class="col"></div>
+    <div class="col-12 col-md-6 mt-5" *ngFor="let pg of pageContent.bottomText">
+        <div class="pad2x">           
+            <div class="page-title2">{{pg.title}}</div>
+            <div class="page-content1">{{pg.content}}</div>
+            <div class="about-link mt-3">
+                <a>{{pg.linkText}}</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row no-gutters px-xs-1 mt-5">
+    <div class="col-12 col-md-8">
+        <div class="page-qouteText"> <q> {{pageContent.qouteText}} </q> </div>
+    </div>
+    <div class="col-12 border-black mt-3"></div>
+</div>
+
+<div class="row mt-5 no-gutters px-xs-1">
+    <div class="col-12">
+        <div class="page-banner-contacts" [ngStyle]="{'background-image': 'url(' + banner.bannerImagePath + ')'}">
+            <div class="banner-title">{{banner.bannerTitle}}</div>
+            <div class="banner-subtitle">{{banner.bannerSubTitle}}</div>
+            <button class="btn-yellow banner-btn">{{banner.bannerBtnText}}</button>
+        
+        </div>
+    </div>
+</div>
