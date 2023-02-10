@@ -1,1 +1,32 @@
-<p>portfolio works!</p>
+<div class="row mt-5 no-gutters px-xs-1">
+    <div class="col-2 col-md-1"><img class="title-image" [src]="pageContent.titleImagePath"></div>
+    <div class="col-10 col-md-7">
+        <div class="page-title">{{pageContent.title}}</div>
+        <div class="page-subtitle">{{pageContent.subTitle}}</div>
+    </div>
+    <div class="col-12 col-md-9 border-black mt-3"></div>
+</div>
+
+<div class="row no-gutters px-xs-1 mt-3">
+    <div class="col-12 col-md-9">
+        <div class="page-content1">{{pageContent.content1}}</div>
+    </div>
+</div>
+
+<div class="row no-gutters px-xs-1 mt-5">
+    <div class="col-12 col-md-10">
+       <div class="page-title2 mt-5">{{pageContent.title2}}</div>        
+       <div class="page-qouteText mt-5"> <q> {{pageContent.qouteText}} </q> </div>
+       <div class="page-content1" style="font-weight: lighter;">{{pageContent.content2}}</div>
+    </div>
+</div>
+
+
+<div class="row no-gutters mt-5 px-xs-2">
+    <div class="col-12 col-md-3 mt-3 px-xs-2" *ngFor="let prot of portfolioList">
+        <div class="px-xs-2" [routerLink]="['/portfolio-detials', prot.id]">
+            <img class="portfolio-img" [src]="prot.imagePath" [alt]="prot.title">
+            <div class="portfolio-title">{{prot.title}}</div>
+        </div>
+    </div>
+</div>

@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import * as config from '../jsons/ourTeam.json'
+import * as config from '../jsons/ourNetwork.json'
+
 @Component({
-  selector: 'app-our-team',
-  templateUrl: './our-team.component.html',
-  styleUrls: ['./our-team.component.css']
+  selector: 'app-our-network',
+  templateUrl: './our-network.component.html',
+  styleUrls: ['./our-network.component.css']
 })
-export class OurTeamComponent implements OnInit {
+export class OurNetworkComponent implements OnInit {
   pageContent :any = {
     "titleImagePath" : "",
     "title": "",

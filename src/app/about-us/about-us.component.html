@@ -47,13 +47,30 @@
     <div class="col-12 border-black mt-3"></div>
 </div>
 
+<div class="px-xs-1 mt-5">
+    <owl-carousel-o class="slide-banner" [options]="customOptions">
+        <ng-container *ngFor="let slide of bannerCarouselList">
+            <ng-template class="slide-banner" carouselSlide [id]="slide.id">
+                <img class="banner-carosulImg" [src]="slide.imagePath" [alt]="slide.hyperLinkText" [title]="slide.hyperLinkText" />
+                <div class="banner-carosul-title">
+                    {{slide.title}}
+                    <div class="banner-carosul-subtitle">{{slide.subTitle}}</div>      
+                    <button *ngIf="slide.hyperLinkText" class="btn-yellow banner-carousel-btn" [owlRouterLink]="slide.hyperLink">{{slide.hyperLinkText}}</button>
+                </div>
+                <img class="banner-carousel-footer-img" [src]="slide.logoPath" alt="">
+            </ng-template>
+        </ng-container>
+    </owl-carousel-o>
+    <div class="col-12 border-black mt-5"></div>
+</div>
+
 <div class="row mt-5 no-gutters px-xs-1">
     <div class="col-12">
         <div class="page-banner-contacts" [ngStyle]="{'background-image': 'url(' + banner.bannerImagePath + ')'}">
             <div class="banner-title">{{banner.bannerTitle}}</div>
             <div class="banner-subtitle">{{banner.bannerSubTitle}}</div>
             <button class="btn-yellow banner-btn">{{banner.bannerBtnText}}</button>
-        
+            <img class="banner-carousel-footer-img" [src]="banner.logoPath" alt="">
         </div>
     </div>
 </div>

@@ -54,6 +54,7 @@ export class AboutUsComponent implements OnInit {
     this.carouselList = config1.carouselList
     this.pageContent = config1.pageContents
     this.banner = config1.banner
+    this.bannerCarouselList = config1.bannerCarouselList
   }
 
 }

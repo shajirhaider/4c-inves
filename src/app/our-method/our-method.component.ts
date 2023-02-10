@@ -5,6 +5,7 @@ import * as config from '../jsons/ourMethod.json'
   templateUrl: './our-method.component.html',
   styleUrls: ['./our-method.component.css']
 })
+
 export class OurMethodComponent implements OnInit {
   pageContent :any = {
     "titleImagePath" : "",

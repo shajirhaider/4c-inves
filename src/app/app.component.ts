@@ -1,18 +1,21 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
+import * as config from './jsons/menu.json'
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = '4c-investment';
   isMobile = false
-  menus = [
-    {text : "ABOUT US", path : ""},
-    {text : "OUR METHOD", path : "/our-method"},
-    {text : "PORTFOLIO", path : "/portfolio"},
-    {text : "OUR TEAM", path : "/our-team"},
-    {text : "CONTACTS", path : "/contacts"},
-  ]
+  menus :any [] = []
+
+  constructor() { }
+
+  ngOnInit(): void {
+    
+    let config1 = config
+    this.menus = config1.menuList
+  }
 }

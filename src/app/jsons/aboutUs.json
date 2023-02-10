@@ -3,8 +3,8 @@
         {
             "id": "1",
             "title": "ICONIC INVESTMENT",
-            "hyperLinkText": "Contact",
-            "hyperLink": "contacts",
+            "hyperLinkText": "New York",
+            "hyperLink": "portfolio-detials/newYork",
             "imagePath": "assets/elements/pictures/About_us/Carousel/first_picture.jpg",
             "dateFrom ": "",
             "dateTo": "",
@@ -14,8 +14,8 @@
         {
             "id": "2",
             "title": "ICONIC INVESTMENT",
-            "hyperLinkText": "",
-            "hyperLink": "",
+            "hyperLinkText": "Rome",
+            "hyperLink": "portfolio-detials/rome",
             "imagePath": "assets/elements/pictures/About_us/Carousel/new_york.jpg",
             "dateFrom ": "",
             "dateTo": "",
@@ -79,12 +79,67 @@
             }
         ]
     },
+    "bannerCarouselList": [
+        {
+            "id": "1",
+            "title": "ICONIC INVESTMENT",
+            "subTitle": "ICONIC INVESTMENT",
+            "hyperLinkText": "CONTACT US TODAY",
+            "hyperLink": "contacts",
+            "imagePath": "assets/elements/pictures/About_us/Banner_Carousel/1.jpg",
+            "dateFrom ": "",
+            "dateTo": "",
+            "order": 1,
+            "isInCarousel": true,
+            "logoPath" : "assets/elements/logo_topbar@2x.png"
+        },
+        {
+            "id": "2",
+            "title": "ICONIC INVESTMENT",
+            "subTitle": "ICONIC INVESTMENT",
+            "hyperLinkText": "CONTACT US TODAY",
+            "hyperLink": "contacts",
+            "imagePath": "assets/elements/pictures/About_us/Banner_Carousel/2.jpg",
+            "dateFrom ": "",
+            "dateTo": "",
+            "order": 1,
+            "isInCarousel": true,
+            "logoPath" : "assets/elements/logo_topbar@2x.png"
+        },
+        {
+            "id": "3",
+            "title": "ICONIC INVESTMENT",
+            "subTitle": "ICONIC INVESTMENT",
+            "hyperLinkText": "CONTACT US TODAY",
+            "hyperLink": "contacts",
+            "imagePath": "assets/elements/pictures/About_us/Banner_Carousel/3.jpg",
+            "dateFrom ": "",
+            "dateTo": "",
+            "order": 3,
+            "isInCarousel": true,
+            "logoPath" : "assets/elements/logo_topbar@2x.png"
+        },
+        {
+            "id": "4",
+            "title": "ICONIC INVESTMENT",
+            "subTitle": "ICONIC INVESTMENT",
+            "hyperLinkText": "",
+            "hyperLink": "",
+            "imagePath": "assets/elements/pictures/About_us/Banner_Carousel/4.jpg",
+            "dateFrom ": "",
+            "dateTo": "",
+            "order": 4,
+            "isInCarousel": true,
+            "logoPath" : "assets/elements/logo_topbar@2x.png"
+        }
+    ],
     "banner" : {
         "bannerImagePath": "assets/elements/pictures/About_us/Banner_Single/1.jpg",
         "bannerTitle": "Discover Bespoke Real State",
         "bannerSubTitle": "The boutique  for top real estate",
         "bannerBtnText" : "CONTACT US TODAY",
-        "bannerBtnUrl" : ""
+        "bannerBtnUrl" : "",
+        "logoPath" : "assets/elements/logo_footer@2x.png"
     }
 
 }

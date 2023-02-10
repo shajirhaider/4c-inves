@@ -1,1 +1,41 @@
-<p>our-team works!</p>
+<div class="row mt-5 no-gutters px-xs-1">
+    <div class="col-2 col-md-1"><img class="title-image" [src]="pageContent.titleImagePath"></div>
+    <div class="col-10 col-md-7">
+        <div class="page-title">{{pageContent.title}}</div>
+        <div class="page-subtitle">{{pageContent.subTitle}}</div>
+    </div>
+    <div class="col-12 col-md-9 border-black mt-3"></div>
+</div>
+
+<div class="row no-gutters px-xs-1 mt-3">
+    <div class="col-12 col-md-9">
+        <div class="page-content1">{{pageContent.content1}}</div>
+        <div class="page-qouteText"> <q> {{pageContent.qouteText}} </q> </div>
+    </div>
+</div>
+
+<div class="row no-gutters px-xs-1 mt-5">
+    <div class="col-12 col-md-10">
+       <div class="page-title2 mt-5">{{pageContent.title2}}</div>
+       <div class="page-title2" style="font-weight: lighter;">{{pageContent.content2}}</div>
+    </div>
+</div>
+
+<div class="row no-gutters px-xs-1 mt-5">
+    <div class="col-12 col-md-10">
+        <div class="row no-gutters mt-5" *ngFor="let peo of pageContent.teamList">
+            <div class="col-12 col-md-4 team-image">
+                <img class="team-image" [src]="peo.imagePath">
+            </div>
+            <div class="col-12 col-md-1"></div>
+            <div class="col-12 col-md-7">
+                <div class="team-title">{{peo.title}}</div>
+                <div class="team-designation">{{peo.designation}}</div>
+                <div class="team-text mt-3">{{peo.text1}}</div>
+                <div *ngIf="peo.text2" class="team-text mt-3">{{peo.text2}}</div>
+                <div *ngIf="peo.text2" class="team-text mt-3">{{peo.text3}}</div>
+                <div *ngIf="peo.text2" class="team-text mt-3">{{peo.text4}}</div>
+            </div>
+        </div>
+    </div>
+</div>

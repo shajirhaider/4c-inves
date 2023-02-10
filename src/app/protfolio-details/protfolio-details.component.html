@@ -1,0 +1,35 @@
+<div class="page-banner-contacts" [ngStyle]="{'background-image': 'url(' + portfolioDetail.detailImage + ')'}"></div>
+
+<div class="row mt-5 no-gutters px-xs-1">
+    <div class="display-flex">
+        <div class="arrow-img" (click)="goBack()" ><img src="assets/elements/arrow_back@2x.png"></div>
+        <div>
+            <div class="page-title">{{portfolioDetail.title}}</div>
+            <div class="page-subtitle">{{portfolioDetail.subTitle}}</div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row mt-5 no-gutters px-xs-1" *ngFor="let d of portfolioDetail.detailList">
+
+    <div class="col-12 col-md-4">
+        <div class="prot-det-img">
+            <!-- <img [src]="d.imageList[0].imagePath"> -->
+            <ng-image-slider [images]="d.imageList" #nav  [imageSize]="imageSize"  ></ng-image-slider>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6">
+        <div class="px-xs-2">
+            <div>
+                <div class="prot-det-title">{{d.title}}</div>
+                <div *ngIf="d.title2" class="prot-det-subtitle">{{d.title2}}</div>
+            </div>
+            <div class="prot-det-text mt-5">{{d.text1}}</div>
+            <div *ngIf="d.text2" class="prot-det-text mt-5">{{d.text2}}</div>
+            <div *ngIf="d.text3" class="prot-det-text">{{d.text3}}</div>
+        </div>
+    </div>
+
+</div>

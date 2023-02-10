@@ -1,0 +1,81 @@
+<div class="row mt-5 no-gutters px-xs-1">
+    <div class="col-2 col-md-1"><img class="title-image" [src]="pageContent.titleImagePath"></div>
+    <div class="col-10 col-md-7">
+        <div class="page-title">{{pageContent.title}}</div>
+        <div class="page-subtitle">{{pageContent.subTitle}}</div>
+    </div>
+    <div class="col-12 col-md-9 border-black mt-3"></div>
+</div>
+
+<div class="row no-gutters px-xs-1 mt-3">
+    <div class="col-12 col-md-9">
+        <div class="page-content1">{{pageContent.content1}}</div>
+        <div class="page-qouteText"> <q> {{pageContent.qouteText}} </q> </div>
+    </div>
+</div>
+
+<div class="row no-gutters px-xs-1 mt-5">
+    <div class="col-12 col-md-10">
+       <div class="page-title2 mt-5">{{pageContent.title2}}</div>
+       <div class="page-title2" style="font-weight: lighter;">{{pageContent.content2}}</div>
+    </div>
+</div>
+
+<div class="row no-gutters px-xs-1 mt-5">
+    <div class="col-12 col-md-10">
+        <div class="row no-gutters mt-5">
+            <div class="col-12 col-md-4 network-image">
+                <div class="net-img-container" *ngFor="let peo of pageContent.teamList">
+                    <img class="network-image" [src]="peo.imagePath">
+                    <div class="network-title">{{peo.title}}</div>
+                    <div class="network-designation">{{peo.designation}}</div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="hide-xs">
+                    <img class="connectorLine" src="assets/elements/round-line.png">
+                </div>
+                <div class="show-xs text-center mt-5">
+                    <img class="" height="100" src="assets/elements/line.png">
+                </div>
+                <div class="text-center">
+                    <img class="net-mid-img mt-5" [src]="pageContent.logoPath">
+                </div>
+            </div>
+            <div class="col-12 col-md-4"> </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-12 col-md-4">
+            </div>
+            <div class="col-12 col-md-2">
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="network-image mt-3 hide-xs"  *ngFor="let peo of pageContent.partnerList">
+                    <div class="" style="width: 45%;"><img class="rev-connectorLine" src="assets/elements/rev-round-line.png"></div>
+                    <div style=" width:65%">
+                        <div class="network-title">{{peo.title}}</div>
+                        <div class="network-designation">{{peo.text}}</div>
+                    </div>
+                </div>
+                <div class="mt-5 show-xs" >
+                    <table class="partnerTable">
+                        <tr *ngFor="let peo of pageContent.partnerList; let i = index">
+                            <td class="partnerTable-td-border-right">
+                                <div *ngIf="0 !== i % 2" class="network-title">
+                                    {{peo.title}}
+                                    <div class="network-designation">{{peo.text}}</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div *ngIf="0 == i % 2" class="network-title">
+                                    {{peo.title}}
+                                    <div class="network-designation">{{peo.text}}</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
