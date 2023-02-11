@@ -2,7 +2,7 @@
    "menuList": [
         {
             "text": "ABOUT US",
-            "path": ""
+            "path": "/about-us"
         },
         {
             "text": "OUR METHOD",

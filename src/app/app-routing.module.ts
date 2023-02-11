@@ -9,11 +9,12 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ProtfolioDetailsComponent } from './protfolio-details/protfolio-details.component';
 
 const routes: Routes = [
-  {path : '', component : AboutUsComponent},
+  {path : "", redirectTo: 'about-us', pathMatch: 'full' },
+  {path : 'about-us', component : AboutUsComponent},
   {path : 'our-method', component : OurMethodComponent},
   {path : 'our-team', component : OurTeamComponent},
   {path : 'portfolio', component : PortfolioComponent},
-  {path : 'portfolio-detials/:id', component : ProtfolioDetailsComponent},
+  {path : 'portfolio/portfolio-detials/:id', component : ProtfolioDetailsComponent},
   {path : 'contacts', component : ContactsComponent},
   {path : 'our-network', component : OurNetworkComponent},
 ];

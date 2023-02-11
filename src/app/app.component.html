@@ -29,7 +29,7 @@
   </span>
   <span class="desktop-nav">
     <!-- <ul> -->
-      <li *ngFor="let m of menus" class="clickable" [routerLink] = "m.path" (click)="isMobile = false" >{{m.text}}</li>
+      <li *ngFor="let m of menus" class="clickable"  routerLinkActive="active"  [routerLink] = "m.path" (click)="isMobile = false" >{{m.text}}</li>
     <!-- </ul> -->
   </span>
   <span class="show-xs drawer-icon clickable float-right" (click)="isMobile = !isMobile" > <img src="assets/elements/x-icon.jpg" alt=""> </span>

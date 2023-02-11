@@ -23,8 +23,8 @@
         <div class="pad2x">           
             <div class="page-title2">{{pg.title}}</div>
             <div class="page-content1">{{pg.content}}</div>
-            <div class="about-link mt-3">
-                <a>{{pg.linkText}}</a>
+            <div *ngIf="pg.linkText" class="about-link mt-3">
+                <a [routerLink] = 'pg.linkUrl' >{{pg.linkText}}</a>
             </div>
         </div>
     </div>
@@ -33,8 +33,8 @@
         <div class="pad2x">           
             <div class="page-title2">{{pg.title}}</div>
             <div class="page-content1">{{pg.content}}</div>
-            <div class="about-link mt-3">
-                <a>{{pg.linkText}}</a>
+            <div *ngIf="pg.linkText" class="about-link mt-3">
+                <a [routerLink] = 'pg.linkUrl'>{{pg.linkText}}</a>
             </div>
         </div>
     </div>

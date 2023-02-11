@@ -24,7 +24,7 @@
 
 <div class="row no-gutters mt-5 px-xs-2">
     <div class="col-12 col-md-3 mt-3 px-xs-2" *ngFor="let prot of portfolioList">
-        <div class="px-xs-2" [routerLink]="['/portfolio-detials', prot.id]">
+        <div class="px-xs-2" [routerLink]="['/portfolio/portfolio-detials', prot.id]">
             <img class="portfolio-img" [src]="prot.imagePath" [alt]="prot.title">
             <div class="portfolio-title">{{prot.title}}</div>
         </div>
