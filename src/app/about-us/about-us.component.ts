@@ -28,7 +28,8 @@ export class AboutUsComponent implements OnInit {
       navSpeed: 300,
       autoplay: true,
       nav: false,
-      center: true,
+      autoHeight : true,
+      // center: true,
       responsive: {
         0: {
           items: 1

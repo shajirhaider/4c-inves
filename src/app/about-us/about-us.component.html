@@ -9,13 +9,15 @@
     </ng-container>
 </owl-carousel-o>
 
-<div class="row mt-5 no-gutters px-xs-1">
-    <div class="col-2 col-md-1"><img class="title-image" [src]="pageContent.titleImagePath"></div>
-    <div class="col-10 col-md-7">
+<div class="display-flex px-xs-1 mt-5 ">
+    <div><img class="title-image" [src]="pageContent.titleImagePath"></div>
+    <div class="w-100">
         <div class="page-title">{{pageContent.title}}</div>
         <div class="page-subtitle">{{pageContent.subTitle}}</div>
     </div>
-    <div class="col-12 col-md-8 border-black mt-3"></div>
+</div>
+<div class="row no-gutters px-xs-1">
+    <div class="col-12 col-md-12 border-black mt-3"></div>
 </div>
 
 <div class="row mt-5 no-gutters px-xs-1">
@@ -55,21 +57,34 @@
                 <div class="banner-carosul-title">
                     {{slide.title}}
                     <div class="banner-carosul-subtitle">{{slide.subTitle}}</div>      
-                    <button *ngIf="slide.hyperLinkText" class="btn-yellow banner-carousel-btn" [owlRouterLink]="slide.hyperLink">{{slide.hyperLinkText}}</button>
+                    <button *ngIf="slide.hyperLinkText" class="btn-yellow banner-carousel-btn mt-3" [owlRouterLink]="slide.hyperLink">{{slide.hyperLinkText}}</button>
                 </div>
                 <img class="banner-carousel-footer-img" [src]="slide.logoPath" alt="">
             </ng-template>
         </ng-container>
     </owl-carousel-o>
+</div>
+<div class="row no-gutters px-xs-1">
     <div class="col-12 border-black mt-5"></div>
 </div>
-
 <div class="row mt-5 no-gutters px-xs-1">
     <div class="col-12">
-        <div class="page-banner-contacts" [ngStyle]="{'background-image': 'url(' + banner.bannerImagePath + ')'}">
-            <div class="banner-title">{{banner.bannerTitle}}</div>
-            <div class="banner-subtitle">{{banner.bannerSubTitle}}</div>
-            <button class="btn-yellow banner-btn">{{banner.bannerBtnText}}</button>
+        <!-- <div class="" style="height: 500px; width: 100%;">
+            <img class="about-banner-img" [src]="banner.bannerImagePath" alt="" style="
+            background-position: 50%;">
+            <div class="banner-title">
+                {{banner.bannerTitle}}
+                <div class="banner-subtitle">{{banner.bannerSubTitle}}</div>       
+                <button class="btn-yellow banner-btn" [routerLink]="banner.bannerBtnHyperLink">{{banner.bannerBtnText}}</button>         
+            </div>                
+            <img class="banner-carousel-footer-img" [src]="banner.logoPath" alt="">
+        </div> -->
+        <div class="about-banner-img " [ngStyle]="{'background-image': 'url(' + banner.bannerImagePath + ')'}">
+            <div class="banner-title">
+                {{banner.bannerTitle}}
+                <div class="banner-subtitle">{{banner.bannerSubTitle}}</div>       
+                <button class="btn-yellow mt-3" [routerLink]="banner.bannerBtnHyperLink">{{banner.bannerBtnText}}</button>         
+            </div>  
             <img class="banner-carousel-footer-img" [src]="banner.logoPath" alt="">
         </div>
     </div>

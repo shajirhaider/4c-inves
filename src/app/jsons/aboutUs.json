@@ -85,7 +85,7 @@
             "title": "ICONIC INVESTMENT",
             "subTitle": "ICONIC INVESTMENT",
             "hyperLinkText": "CONTACT US TODAY",
-            "hyperLink": "contacts",
+            "hyperLink": "/contacts",
             "imagePath": "assets/elements/pictures/About_us/Banner_Carousel/1.jpg",
             "dateFrom ": "",
             "dateTo": "",
@@ -98,7 +98,7 @@
             "title": "ICONIC INVESTMENT",
             "subTitle": "ICONIC INVESTMENT",
             "hyperLinkText": "CONTACT US TODAY",
-            "hyperLink": "contacts",
+            "hyperLink": "/contacts",
             "imagePath": "assets/elements/pictures/About_us/Banner_Carousel/2.jpg",
             "dateFrom ": "",
             "dateTo": "",
@@ -111,7 +111,7 @@
             "title": "ICONIC INVESTMENT",
             "subTitle": "ICONIC INVESTMENT",
             "hyperLinkText": "CONTACT US TODAY",
-            "hyperLink": "contacts",
+            "hyperLink": "/contacts",
             "imagePath": "assets/elements/pictures/About_us/Banner_Carousel/3.jpg",
             "dateFrom ": "",
             "dateTo": "",
@@ -138,7 +138,7 @@
         "bannerTitle": "Discover Bespoke Real State",
         "bannerSubTitle": "The boutique  for top real estate",
         "bannerBtnText" : "CONTACT US TODAY",
-        "bannerBtnUrl" : "",
+        "bannerBtnHyperLink" : "/contacts",
         "logoPath" : "assets/elements/logo_footer@2x.png"
     }
 

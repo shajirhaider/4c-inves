@@ -24,5 +24,19 @@
             "text": "CONTACTS",
             "path": "/contacts"
         }
+    ],
+    "socialMediaList":[
+        {
+            "imagePath": "assets/elements/facebook@2x.png",
+            "hyperLink":"https://www.facebook.com/"
+        },
+        {
+            "imagePath": "assets/elements/instagram@2x.png",
+            "hyperLink":"https://www.facebook.com/"
+        },
+        {
+            "imagePath": "assets/elements/twitter@2x.png",
+            "hyperLink":"https://www.facebook.com/"
+        }
     ]
 }

@@ -1,11 +1,21 @@
 <div class="page-banner-contacts" [ngStyle]="{'background-image': 'url(' + pageContent.imagePath + ')'}"></div>
-<div class="row mt-5 no-gutters px-xs-1">
+<!-- <div class="row mt-5 no-gutters px-xs-1">
     <div class="col-2 col-md-1"><img class="title-image" [src]="pageContent.titleImagePath"></div>
     <div class="col-10 col-md-9">
         <div class="page-title">{{pageContent.title}}</div>
         <div class="page-subtitle">{{pageContent.subTitle}}</div>
     </div>
     <div class="col-12 col-md-9 border-black mt-3"></div>
+</div> -->
+<div class="display-flex px-xs-1 mt-5 ">
+    <div><img class="title-image" [src]="pageContent.titleImagePath"></div>
+    <div class="w-100">
+        <div class="page-title">{{pageContent.title}}</div>
+        <div class="page-subtitle">{{pageContent.subTitle}}</div>
+    </div>
+</div>
+<div class="row no-gutters px-xs-1">
+    <div class="col-12 col-md-12 border-black mt-3"></div>
 </div>
 
 <div class="row no-gutters px-xs-1 mt-3">
@@ -20,23 +30,37 @@
         <div class="upright-text ser-text">100% FOCUS</div>
     </div>
     <div class="col-12 col-md-9">
-        <div class="">
+        <div class=" hide-xs">
             <div *ngFor="let c of pageContent.textList; let i = index" class="">
-                <div *ngIf="i<3">
-                    <div class="pad-tl-border border-left" >
+                <div *ngIf="i<3"  class="border-left" style="padding-left: 70px;">
+                    <div class="pad-tl-border border-left"  [ngClass]="i==2? 'border-bottom' : '' ">
+                        <div class="page-title2">{{c.heading}}</div>
+                        <div class="page-content1">{{c.texts}}</div>
+                    </div>
+                    <div *ngIf="i == 2"  class="border-bottom-inverted"></div>
+                </div>
+                <div *ngIf="i == 2" class=" ser-text"  >           
+                    360° SERVICE
+                </div>   
+                <div class="border-left" *ngIf="2 < i" style="padding-left: 70px;">
+                    <div *ngIf="i == 3"  class="border-top-inverted"></div>
+                    <div class="pad-tl-border border-left"   [ngClass]="i==3? 'border-top' : '' ">
                         <div class="page-title2">{{c.heading}}</div>
                         <div class="page-content1">{{c.texts}}</div>
                     </div>
                 </div>
-                <div *ngIf="i == 2" class="border-box ser-text col-8">             
-                    360° SERVICE
-                </div>   
-                <div class="pad-tl-border border-left" *ngIf="2 < i">
+            </div>
+
+        </div>
+    </div>
+    <div class="col-12 col-md-9 ">
+        <div class="show-xs">
+        <div *ngFor="let c of pageContent.textList; let i = index" class="mt-5">
+                <div>
                     <div class="page-title2">{{c.heading}}</div>
                     <div class="page-content1">{{c.texts}}</div>
                 </div>
-            </div>
-
+            </div>  
         </div>
     </div>
 </div>

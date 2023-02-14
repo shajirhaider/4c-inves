@@ -3,19 +3,11 @@
   <!-- mobile menu start -->
 
   <div class="dash-nav dash-nav-tabs-mob" [style.width]="!isMobile? '0px' : '100%' ">
-    <!-- <div class="row no-gutters" *ngIf="isMobile" style="background-color: #000;" >
-      <div class="col-1"></div>
-      <div class="col-10 text-center">    <img src="assets/elements/logo_topbar.png" alt=""></div>
-    
-      <div class="col-1 x-icon text-center" (click)="isMobile = false">
-       X
-      </div>
-    </div> -->
-    <div class="row"  *ngIf="isMobile">
+    <div class="row" >
       <div class="col-1"></div>
       <div class="col-10">
-        <div class="mobile-nav-tabs"> 
-          <li *ngFor="let m of menus" class="clickable" [routerLink] = "m.path" (click)="isMobile = false" >{{m.text}}</li>
+        <div class="mobile-nav-tabs mt-5"> 
+          <li *ngFor="let m of menus" class="clickable" [routerLink] = "m.path" routerLinkActive="active" (click)="isMobile = false" >{{m.text}}</li>
         </div>     
       </div>
       <div class="col-1"></div>
@@ -25,7 +17,7 @@
   <!-- mobile menu end -->
 
   <span class="logo-header">
-    <img class="clickable" src="assets/elements/Logo_topbar.png" alt="">
+    <img class="clickable" routerLink="/about-us" src="assets/elements/Logo_topbar.png" alt="">
   </span>
   <span class="desktop-nav">
     <!-- <ul> -->
@@ -38,5 +30,24 @@
 
 <div class="main-content">
   <router-outlet></router-outlet>
-  <div class="" style="height: 100px;"></div>
+
+  <div class="row mt-5 no-gutters px-xs-1 footer">
+    <div class="col-12 border-black mt-5"></div>
+    <div class="col-12 mt-5">
+      <div class="display-flex">      
+        <div class="wid-10 text-center">
+          <img class="clickable footer-logo" routerLink="/about-us" src="assets/elements/logo_footer@2x.png" alt="" >
+        </div>
+        <div class="wid-60 text-center">
+          <span class="footer-link clickable" *ngFor="let m of menus" routerLinkActive="active" [routerLink] = "m.path" (click)="isMobile = false">{{m.text}}</span>
+        </div>
+        <div class="wid-40 text-center">
+          <a class="footer-link-social clickable" *ngFor="let m of socialMedia" [href] = "m.hyperLink">
+            <img class="clickable" [src]="m.imagePath" alt="" >
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>
