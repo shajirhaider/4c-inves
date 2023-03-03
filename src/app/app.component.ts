@@ -1,5 +1,5 @@
 import { Component,OnInit } from '@angular/core';
-import * as config from './jsons/menu.json'
+import * as config from '../assets/jsons/menu.json'
 
 @Component({
   selector: 'app-root',
@@ -10,6 +10,7 @@ export class AppComponent implements OnInit {
   title = '4c-investment';
   isMobile = false
   menus :any [] = []
+  footerList :any [] = []
   socialMedia : any[] = []
   constructor() { }
 
@@ -17,6 +18,7 @@ export class AppComponent implements OnInit {
     
     let config1 = config
     this.menus = config1.menuList
+    this.footerList = config1.footerList
     this.socialMedia = config1.socialMediaList
   }
 }

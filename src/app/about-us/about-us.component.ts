@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-
-import * as config from '../jsons/aboutUs.json'
+import * as config from '../../assets/jsons/aboutUs.json'
 
 @Component({
   selector: 'app-about-us',
@@ -28,8 +27,9 @@ export class AboutUsComponent implements OnInit {
       navSpeed: 300,
       autoplay: true,
       nav: false,
-      autoHeight : true,
-      // center: true,
+      // autoHeight : true,
+      // autoWidth : true,
+      center: true,
       responsive: {
         0: {
           items: 1

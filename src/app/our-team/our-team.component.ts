@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as config from '../jsons/ourTeam.json'
+import * as config from '../../assets/jsons/ourTeam.json'
 @Component({
   selector: 'app-our-team',
   templateUrl: './our-team.component.html',

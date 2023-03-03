@@ -39,7 +39,7 @@
           <img class="clickable footer-logo" routerLink="/about-us" src="assets/elements/logo_footer@2x.png" alt="" >
         </div>
         <div class="wid-60 text-center">
-          <span class="footer-link clickable" *ngFor="let m of menus" routerLinkActive="active" [routerLink] = "m.path" (click)="isMobile = false">{{m.text}}</span>
+          <span class="footer-link clickable" *ngFor="let m of footerList" routerLinkActive="active" [routerLink] = "m.path" (click)="isMobile = false">{{m.text}}</span>
         </div>
         <div class="wid-40 text-center">
           <a class="footer-link-social clickable" *ngFor="let m of socialMedia" [href] = "m.hyperLink">

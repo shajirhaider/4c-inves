@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as config from '../jsons/contacts.json'
+import * as config from '../../assets/jsons/contacts.json'
 @Component({
   selector: 'app-contacts',
   templateUrl: './contacts.component.html',

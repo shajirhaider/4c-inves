@@ -1,0 +1,64 @@
+{
+   "menuList": [
+        {
+            "text": "ABOUT US",
+            "path": "/about-us"
+        },
+        {
+            "text": "OUR METHOD",
+            "path": "/our-method"
+        },
+        {
+            "text": "PORTFOLIO",
+            "path": "/portfolio"
+        },
+        {
+            "text": "OUR TEAM",
+            "path": "/our-team"
+        },
+        {
+            "text": "OUR NETWORK",
+            "path": "/our-network"
+        },
+        {
+            "text": "CONTACTS",
+            "path": "/contacts"
+        }
+    ],
+    "footerList": [
+        {
+            "text": "ABOUT US",
+            "path": "/about-us"
+        },
+        {
+            "text": "OUR METHOD",
+            "path": "/our-method"
+        },
+        {
+            "text": "PRIVACY",
+            "path": "/privacy"
+        },
+        {
+            "text": "IMPRESSUM",
+            "path": "/impressum"
+        },
+        {
+            "text": "CONTACTS",
+            "path": "/contacts"
+        }
+    ],
+    "socialMediaList":[
+        {
+            "imagePath": "assets/elements/facebook@2x.png",
+            "hyperLink":"https://www.facebook.com/"
+        },
+        {
+            "imagePath": "assets/elements/instagram@2x.png",
+            "hyperLink":"https://www.facebook.com/"
+        },
+        {
+            "imagePath": "assets/elements/twitter@2x.png",
+            "hyperLink":"https://www.facebook.com/"
+        }
+    ]
+}

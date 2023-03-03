@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as config from '../jsons/ourNetwork.json'
+import * as config from '../../assets/jsons/ourNetwork.json'
 
 @Component({
   selector: 'app-our-network',

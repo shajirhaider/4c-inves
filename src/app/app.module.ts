@@ -12,6 +12,8 @@ import { OurTeamComponent } from './our-team/our-team.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { OurNetworkComponent } from './our-network/our-network.component';
 import { ProtfolioDetailsComponent } from './protfolio-details/protfolio-details.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { ImpressumComponent } from './impressum/impressum.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ProtfolioDetailsComponent } from './protfolio-details/protfolio-details
     OurTeamComponent,
     ContactsComponent,
     OurNetworkComponent,
-    ProtfolioDetailsComponent
+    ProtfolioDetailsComponent,
+    PrivacyComponent,
+    ImpressumComponent
   ],
   imports: [
     BrowserModule,
